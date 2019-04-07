@@ -1,7 +1,10 @@
 <h1>Recipes Index</h1>
 
+<!-- <h2><a href='/recipes/<%#@recipe.id%>'><%#@recipe.name%></a></h2>
+<h2><a href='/recipes/<%#@recipe.id%>'><%#@recipe.ingredients%></a></h2>
+<h2><a href='/recipes/<%#@recipe.id%>'><%#@recipe.cook_time%></a></h2> -->
+
 <h2><%@recipes.each do |recipe| %>
   <a href='/recipes/<%=recipe.id%>'><%=recipe.name%></a>
-
 
 <%end%></h2>
